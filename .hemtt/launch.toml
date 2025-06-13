@@ -1,0 +1,16 @@
+[default]
+workshop = [
+    "450814997",  # CBA_A3
+    "2369477168", # Advanced Dev Tools
+    "623475643",  # 3DEN Enhanced
+]
+presets = []
+dlc = []
+optionals = []
+parameters = []
+
+[ace]
+extends = "default"
+workshop = [
+    "463939057", # ACE
+]
