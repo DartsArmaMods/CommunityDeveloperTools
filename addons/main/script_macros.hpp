@@ -21,6 +21,12 @@
     #define PATHTOF2(var1) MAINPREFIX\PREFIX\SUBPREFIX\COMPONENT\SUBCOMPONENT\var1
 #endif
 
+#define PATHTO_SUB_FNC(sub,func) class func {\
+    file = QPATHTOF(sub\DOUBLES(fnc,func).sqf);\
+    CFGFUNCTION_HEADER;\
+    RECOMPILE;\
+}
+
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {call FUNC(x)}
 #else
