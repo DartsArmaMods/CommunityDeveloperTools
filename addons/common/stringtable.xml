@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="MOD_ACRONYM">
+<Project name="CDT">
     <Package name="Common">
-        <Key ID="STR_MOD_PREFIX_common_displayName">
+        <Key ID="STR_cdt_common_displayName">
             <English>Common</English>
         </Key>
     </Package>

@@ -1,10 +1,5 @@
-// Global toggles for caching/logging
-// #define DISABLE_COMPILE_CACHE
-// #define DEBUG_MODE_FULL
-#define DEBUG_SYNCHRONOUS
-
-#include "\x\cba\addons\main\script_macros_common.hpp"
-#include "\x\cba\addons\xeh\script_xeh.hpp"
+// To remove CBA dependency
+#include "script_macros_common.hpp"
 
 #define QQUOTE(var1) QUOTE(QUOTE(var1))
 
@@ -26,17 +21,10 @@
     #define PATHTOF2(var1) MAINPREFIX\PREFIX\SUBPREFIX\COMPONENT\SUBCOMPONENT\var1
 #endif
 
-#undef PREP
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {call FUNC(x)}
-    #define PREP(fncName) FUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
-    #define PREP_RECOMPILE_START    if (isNil "MOD_PREFIX_fnc_recompile") then {MOD_PREFIX_recompiles = []; MOD_PREFIX_fnc_recompile = {{call _x} forEach MOD_PREFIX_recompiles;}}; private _recomp = {
-    #define PREP_RECOMPILE_END      }; call _recomp; MOD_PREFIX_recompiles pushBack _recomp;
 #else
     #define LINKFUNC(x) FUNC(x)
-    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
-    #define PREP_RECOMPILE_START ; /* disabled */
-    #define PREP_RECOMPILE_END ; /* disabled */
 #endif
 
 #define WEAP_XX(WEAP, COUNT) class DOUBLES(_xx,WEAP) { \
@@ -58,11 +46,6 @@
 #define CARGO_XX(ITEM, COUNT) class ITEM { \
     type = QUOTE(ITEM); \
     amount = COUNT; \
-}
-
-#define MAG_CSW(var1,var2) class DOUBLES(var1,csw): var1 { \
-    scope = var2; \
-    type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
 }
 
 // Debug textures, mainly for testing hiddenSelections

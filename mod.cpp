@@ -1,8 +1,8 @@
 author = "DartRuffian";
-name = "MOD_TITLE";
-description = "MOD_TITLE - Version 0.0.0";
+name = "Community Developer Tools";
+description = "Community Developer Tools - Version 0.0.0";
 overview = "";
-overviewPicture = "logo_MOD_PREFIX_ca.paa";
-picture = "logo_MOD_PREFIX.png";
-logo = "logo_MOD_PREFIX_ca.paa";
-logoOver = "logo_MOD_PREFIX_ca.paa";
+overviewPicture = "logo_cdt_ca.paa";
+picture = "logo_cdt.png";
+logo = "logo_cdt_ca.paa";
+logoOver = "logo_cdt_ca.paa";

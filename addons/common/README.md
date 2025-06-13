@@ -1,4 +1,4 @@
-MOD_PREFIX_common
+cdt_common
 ===================
 
 Common functionality shared between addons.

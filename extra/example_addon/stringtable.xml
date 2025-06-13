@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="MOD_ACRONYM">
+<Project name="CDT">
     <Package name="Addon Name">
-        <Key ID="STR_MOD_PREFIX_addonName_displayName">
+        <Key ID="STR_cdt_addonName_displayName">
             <English>Addon Name</English>
         </Key>
     </Package>

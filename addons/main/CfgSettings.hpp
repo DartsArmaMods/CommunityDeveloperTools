@@ -4,9 +4,7 @@ class CfgSettings {
             class PREFIX {
                 main_addon = QUOTE(ADDON);
 
-                class dependencies {
-                    CBA[] = {"cba_main", REQUIRED_CBA_VERSION, QUOTE(true)};
-                };
+                class dependencies {};
             };
         };
     };

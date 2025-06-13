@@ -1,4 +1,4 @@
-MOD_PREFIX_main
+cdt_main
 ===================
 
-Main Addon for MOD_TITLE
+Main Addon for Community Developer Tools

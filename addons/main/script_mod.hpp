@@ -1,10 +1,9 @@
 #define MAINPREFIX z
-#define PREFIX MOD_PREFIX
-#define MOD_NAME MOD_TITLE
+#define PREFIX cdt
+#define MOD_NAME Community Developer Tools
 #define AUTHOR "DartRuffian"
 
 #define REQUIRED_VERSION 2.18
-#define REQUIRED_CBA_VERSION {3,18,1}
 
 #include "script_version.hpp"
 

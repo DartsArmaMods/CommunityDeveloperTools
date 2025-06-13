@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "A3_Data_F_Decade_Loadorder"
         };
         units[] = {};
         weapons[] = {};
